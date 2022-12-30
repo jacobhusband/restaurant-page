@@ -14,10 +14,10 @@ nav a:hover {
 }
 
 .headline {
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: white;
   padding-top: 5rem;
-  padding-bottom: 8rem;
+  padding-bottom: 6rem;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/src/images/grilled-vegetables.webp");
   background-position: center;
@@ -28,5 +28,13 @@ nav a:hover {
 
 .sub-headline {
   font-size: 1.5rem;
-  top: 8rem;
+  margin-top: 1rem;
+}
+
+.home {
+  background-color: rgb(19, 19, 19);
+}
+
+.hours {
+  background-color: rgb(114, 58, 13);
 }

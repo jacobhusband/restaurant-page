@@ -2,6 +2,10 @@
   width: 100%;
 }
 
+.w-200px {
+  width: 200px;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -14,12 +18,28 @@
   margin: 0.5rem;
 }
 
+.mt-1r {
+  margin-top: 1rem;
+}
+
 .p-05r {
   padding: 0.5rem;
 }
 
+.p-1r {
+  padding: 1rem;
+}
+
+.p-2r {
+  padding: 2rem;
+}
+
 .fs-1pt25r {
   font-size: 1.25rem;
+}
+
+.br-05r {
+  border-radius: 0.5rem;
 }
 
 .pos-rel {
@@ -42,4 +62,16 @@
 
 .inline-block {
   display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-dir-col {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
 }
