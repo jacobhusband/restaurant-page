@@ -1,0 +1,24 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "Creating a restaurant page with webpack from TOP",
+  "main": "src/index.js",
+  "scripts": {
+    "watch": "npx webpack --mode=development --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobhusband/restaurant-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacobhusband/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/jacobhusband/restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
