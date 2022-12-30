@@ -1,8 +1,23 @@
+nav {
+  background-color: rgb(15, 15, 15);
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+.wrapper {
+  width: 110px;
+}
+
 .headline {
   font-size: 3rem;
   color: white;
   padding-top: 5rem;
-  padding-bottom: 6rem;
+  padding-bottom: 8rem;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/src/images/grilled-vegetables.webp");
   background-position: center;
