@@ -37,6 +37,24 @@ export default class Home extends Builder {
           }),
         ]
       ),
+      this.buildElement(
+        "div",
+        { class: "location flex flex-dir-col align-items-center" },
+        [
+          this.buildElement("h2", {
+            class: "mt-2r mb-1r",
+            textContent: "Reviews",
+          }),
+          this.createReviews(
+            "The vegetable kabobs were made to perfection!",
+            "Sharon Shaw"
+          ),
+          this.createReviews(
+            "The grain bowls tasted bananas!",
+            "Harold Hamilton"
+          ),
+        ]
+      ),
     ]);
   }
 
@@ -51,6 +69,12 @@ export default class Home extends Builder {
       this.buildElement("div", { class: "col" }, [
         this.buildElement("p", { textContent: time }),
       ]),
+    ]);
+  }
+
+  createReviews(review, name) {
+    return this.buildElement("div", { class: "mb-1r" }, [
+      this.buildElement("p", { textContent: review + " -" + name }),
     ]);
   }
 }
