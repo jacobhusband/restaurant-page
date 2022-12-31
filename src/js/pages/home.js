@@ -11,8 +11,7 @@ export default class Home extends Builder {
       this.buildElement(
         "div",
         {
-          class:
-            "hours ph-2r pv-1r br-05r flex flex-dir-col align-items-center",
+          class: "hours flex flex-dir-col align-items-center",
         },
         [
           this.buildElement("h2", { class: "mb-1r", textContent: "Hours" }),
@@ -23,6 +22,19 @@ export default class Home extends Builder {
           this.createHoursForDay("Thursday", "11am - 8pm"),
           this.createHoursForDay("Friday", "11am - 8pm"),
           this.createHoursForDay("Saturday", "10am - 9pm"),
+        ]
+      ),
+      this.buildElement(
+        "div",
+        { class: "location flex flex-dir-col align-items-center" },
+        [
+          this.buildElement("h2", {
+            class: "mt-2r mb-1r",
+            textContent: "Location",
+          }),
+          this.buildElement("p", {
+            textContent: "123 Veggie Street, Vegetable Land, CA",
+          }),
         ]
       ),
     ]);
