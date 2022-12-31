@@ -16,85 +16,29 @@ export default class Home extends Builder {
         },
         [
           this.buildElement("h2", { class: "mb-1r", textContent: "Hours" }),
-          this.buildElement("div", { class: "row gap-1r" }, [
-            this.buildElement("div", { class: "col" }, [
-              this.buildElement("p", {
-                textContent: "Sunday:",
-                class: "text-right",
-              }),
-            ]),
-            this.buildElement("div", { class: "col" }, [
-              this.buildElement("p", { textContent: "10am - 9pm" }),
-            ]),
-          ]),
-          this.buildElement("div", { class: "row gap-1r" }, [
-            this.buildElement("div", { class: "col" }, [
-              this.buildElement("p", {
-                textContent: "Monday:",
-                class: "text-right",
-              }),
-            ]),
-            this.buildElement("div", { class: "col" }, [
-              this.buildElement("p", { textContent: "10am - 9pm" }),
-            ]),
-          ]),
-          this.buildElement("div", { class: "row gap-1r" }, [
-            this.buildElement("div", { class: "col" }, [
-              this.buildElement("p", {
-                textContent: "Tuesday:",
-                class: "text-right",
-              }),
-            ]),
-            this.buildElement("div", { class: "col" }, [
-              this.buildElement("p", { textContent: "10am - 9pm" }),
-            ]),
-          ]),
-          this.buildElement("div", { class: "row gap-1r" }, [
-            this.buildElement("div", { class: "col" }, [
-              this.buildElement("p", {
-                textContent: "Wednesday:",
-                class: "text-right",
-              }),
-            ]),
-            this.buildElement("div", { class: "col" }, [
-              this.buildElement("p", { textContent: "10am - 9pm" }),
-            ]),
-          ]),
-          this.buildElement("div", { class: "row gap-1r" }, [
-            this.buildElement("div", { class: "col" }, [
-              this.buildElement("p", {
-                textContent: "Thursday:",
-                class: "text-right",
-              }),
-            ]),
-            this.buildElement("div", { class: "col" }, [
-              this.buildElement("p", { textContent: "10am - 9pm" }),
-            ]),
-          ]),
-          this.buildElement("div", { class: "row gap-1r" }, [
-            this.buildElement("div", { class: "col" }, [
-              this.buildElement("p", {
-                textContent: "Friday:",
-                class: "text-right",
-              }),
-            ]),
-            this.buildElement("div", { class: "col" }, [
-              this.buildElement("p", { textContent: "10am - 9pm" }),
-            ]),
-          ]),
-          this.buildElement("div", { class: "row gap-1r" }, [
-            this.buildElement("div", { class: "col" }, [
-              this.buildElement("p", {
-                textContent: "Saturday:",
-                class: "text-right",
-              }),
-            ]),
-            this.buildElement("div", { class: "col" }, [
-              this.buildElement("p", { textContent: "10am - 9pm" }),
-            ]),
-          ]),
+          this.createHoursForDay("Sunday", "10am - 9pm"),
+          this.createHoursForDay("Monday", "11am - 8pm"),
+          this.createHoursForDay("Tuesday", "11am - 8pm"),
+          this.createHoursForDay("Wednesday", "11am - 8pm"),
+          this.createHoursForDay("Thursday", "11am - 8pm"),
+          this.createHoursForDay("Friday", "11am - 8pm"),
+          this.createHoursForDay("Saturday", "10am - 9pm"),
         ]
       ),
+    ]);
+  }
+
+  createHoursForDay(day, time) {
+    return this.buildElement("div", { class: "row gap-1r" }, [
+      this.buildElement("div", { class: "col" }, [
+        this.buildElement("p", {
+          textContent: day + ":",
+          class: "text-right",
+        }),
+      ]),
+      this.buildElement("div", { class: "col" }, [
+        this.buildElement("p", { textContent: time }),
+      ]),
     ]);
   }
 }
