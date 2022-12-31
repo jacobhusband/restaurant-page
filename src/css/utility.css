@@ -22,12 +22,26 @@
   margin-top: 1rem;
 }
 
+.mb-1r {
+  margin-bottom: 1rem;
+}
+
 .p-05r {
   padding: 0.5rem;
 }
 
 .p-1r {
   padding: 1rem;
+}
+
+.ph-2r {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.pv-1r {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .p-2r {
@@ -42,6 +56,10 @@
   border-radius: 0.5rem;
 }
 
+.gap-1r {
+  gap: 1rem;
+}
+
 .pos-rel {
   position: relative;
 }
@@ -54,6 +72,10 @@
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .underline {
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -64,7 +86,8 @@
   display: inline-block;
 }
 
-.flex {
+.flex,
+.row {
   display: flex;
 }
 
@@ -74,4 +97,8 @@
 
 .align-items-center {
   align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
 }
