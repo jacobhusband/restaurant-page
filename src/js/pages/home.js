@@ -53,6 +53,14 @@ export default class Home extends Builder {
             "The grain bowls tasted bananas!",
             "Harold Hamilton"
           ),
+          this.createReviews(
+            "I recommended the kabob to a friend and she passed out it was so good!",
+            "Lucy Longington"
+          ),
+          this.createReviews(
+            "There are so many options on the menu!",
+            "Young Money"
+          ),
         ]
       ),
     ]);
@@ -73,8 +81,9 @@ export default class Home extends Builder {
   }
 
   createReviews(review, name) {
-    return this.buildElement("div", { class: "mb-1r" }, [
-      this.buildElement("p", { textContent: review + " -" + name }),
+    return this.buildElement("div", { class: "review mb-1r text-center" }, [
+      this.buildElement("p", { textContent: review }),
+      this.buildElement("p", { textContent: "-" + name }),
     ]);
   }
 }
