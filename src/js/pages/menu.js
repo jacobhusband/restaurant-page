@@ -7,10 +7,14 @@ export default class Menu extends Builder {
   }
 
   pageCreation() {
-    return this.buildElement("div", {}, [
-      this.buildElement("div", { class: "menu m-auto w-80 p-05r" }, [
-        this.buildElement("h2", { textContent: "Menu" }),
-      ]),
+    return this.buildElement("div", { class: "menu p-2r" }, [
+      this.buildElement(
+        "div",
+        {
+          class: "flex flex-dir-col align-items-center",
+        },
+        [this.buildElement("h2", { class: "mb-1r", textContent: "Items" })]
+      ),
     ]);
   }
 }

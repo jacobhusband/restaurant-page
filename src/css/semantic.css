@@ -31,7 +31,9 @@ nav a:hover {
   margin-top: 1rem;
 }
 
-.home {
+.home,
+.menu,
+.contact {
   background-color: rgb(19, 19, 19);
 }
 
@@ -43,6 +45,14 @@ nav a:hover {
   width: 200px;
 }
 
+.location > p,
 .review {
-  width: 450px;
+  width: 300px;
+}
+
+@media only screen and (min-width: 600px) {
+  .location > p,
+  .review {
+    width: 450px;
+  }
 }

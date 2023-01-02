@@ -33,6 +33,7 @@ export default class Home extends Builder {
             textContent: "Location",
           }),
           this.buildElement("p", {
+            class: "text-center",
             textContent: "123 Veggie Street, Vegetable Land, CA",
           }),
         ]
