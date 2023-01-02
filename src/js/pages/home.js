@@ -62,6 +62,7 @@ export default class Home extends Builder {
             "There are so many options on the menu!",
             "Young Money"
           ),
+          this.buildElement("div", { class: "mb-1r" }),
         ]
       ),
     ]);

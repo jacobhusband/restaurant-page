@@ -30,6 +30,10 @@
   margin-bottom: 1rem;
 }
 
+.mb-3r {
+  margin-bottom: 3rem;
+}
+
 .p-05r {
   padding: 0.5rem;
 }
@@ -64,6 +68,10 @@
   border-radius: 0.5rem;
 }
 
+.b-1px-top {
+  border-top: 1px solid black;
+}
+
 .gap-1r {
   gap: 1rem;
 }
@@ -80,6 +88,10 @@
 
 .pos-abs {
   position: absolute;
+}
+
+.pos-fixed {
+  position: fixed;
 }
 
 .text-center {

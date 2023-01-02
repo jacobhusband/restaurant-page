@@ -2,16 +2,19 @@ import PageLoad from "./js/page-load";
 import Home from "./js/pages/home";
 import Menu from "./js/pages/menu";
 import Contact from "./js/pages/contact";
+import Footer from "./js/footer";
 
 const header = new PageLoad();
 const home = new Home();
 const menu = new Menu();
 const contact = new Contact();
+const footer = new Footer();
 
 const $content = document.querySelector("#content");
 
 $content.appendChild(header.content);
 $content.querySelector(".container").appendChild(home.content);
+$content.appendChild(footer.content);
 
 const $nav = document.querySelector("nav");
 

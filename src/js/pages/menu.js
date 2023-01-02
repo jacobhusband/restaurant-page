@@ -28,6 +28,7 @@ export default class Menu extends Builder {
             "/src/images/kabobs/seasoned.jpg"
           ),
         ]),
+        this.buildElement("div", { class: "mb-3r" }),
       ]),
     ]);
   }
