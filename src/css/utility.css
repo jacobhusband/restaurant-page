@@ -52,6 +52,10 @@
   padding: 2rem;
 }
 
+.pb-0 {
+  padding-bottom: 0;
+}
+
 .fs-1pt25r {
   font-size: 1.25rem;
 }
@@ -62,6 +66,12 @@
 
 .gap-1r {
   gap: 1rem;
+}
+
+.card {
+  background-color: rgba(10, 10, 10, 0.562);
+  margin: 0.5rem;
+  border-radius: 0.25rem;
 }
 
 .pos-rel {
@@ -97,6 +107,10 @@
 
 .flex-dir-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .align-items-center {
